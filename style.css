@@ -1,0 +1,835 @@
+/* Global Styles */
+body {
+  padding-top: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+/* Navbar Base */
+.navbar {
+  background: linear-gradient(to right, #141e30, #243b55);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  padding: 0.7rem 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #00d1ff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #fff !important;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin: 0 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background-color: #00d1ff;
+  color: #000 !important;
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+  background-color: #00d1ff;
+  color: #000 !important;
+  font-weight: bold;
+}
+
+/* Toggler Button */
+.navbar-dark .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after,
+.navbar-dark .navbar-toggler-icon div {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #00d1ff;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-toggler-icon::before {
+  top: 0;
+}
+
+.navbar-dark .navbar-toggler-icon::after {
+  bottom: 0;
+}
+
+.navbar-dark .navbar-toggler-icon div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Collapsible Mobile Menu */
+.navbar-collapse {
+  background-color: #141e30;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* Navbar Button Styling */
+.navbar .btn {
+  padding: 6px 16px;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar .btn:hover {
+  transform: scale(1.05);
+}
+
+/* Make navbar more distinct on scroll */
+.navbar-dark.bg-dark {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Mobile Specific */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Typing effect styles */
+.typed-text {
+  font-weight: bold;
+  color: #00d1ff;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #00d1ff;
+  width: 2px;
+  animation: blink 0.7s steps(1) infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+/* Section Centering */
+#home {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.name {
+  color: #00d1ff;
+}
+
+/* Make sure text scales nicely on all devices */
+#home h1, #home h3 {
+  margin-bottom: 20px;
+  font-size: calc(1.5rem + 1vw);
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/background.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-img {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.typed-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00d1ff;
+  margin-top: 15px;
+}
+
+/* Sections */
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+/* About Section Gradient Background */
+#about {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: white;
+}
+
+#about p,
+#education ul,
+#location p,
+#contact ul {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+#about img,
+#education img,
+#works img {
+  border-radius: 500px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  height: 250px;
+  width: 250px;
+
+}
+
+.typing-container {
+  font-size: 2rem;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Progress Bars */
+.progress {
+  height: 30px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+/* Contact Icons */
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact ul li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+
+#contact ul li i {
+  margin-right: 10px;
+}
+
+/* Location Section Styling */
+#location {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+#location .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#location h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#location p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+#location iframe {
+  width: 100%;
+  height: 900px;
+  border: 7px solid black;
+  border-radius: 10px;
+}
+
+/* Login/Signup Section */
+#login-signup {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+#login-signup h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+#login-signup .container {
+  border-radius: 20px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#login-signup .container:hover {
+  transform: scale(1.01);
+}
+
+.form-box {
+  max-width: 100%;
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.button-group .btn {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .form-box {
+    padding: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .button-group .btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-links a i {
+  margin-right: 5px;
+}
+
+.social-links a:hover {
+  color: #00aced; /* Change this to match your theme */
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #00d1ff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Educational Background Section Gradient */
+
+
+
+/* ===== Educational Background Container ===== */
+.education-container {
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #2e2e2e;
+}
+
+/* Section Title */
+.education-container h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #004aad;
+  letter-spacing: 1.1px;
+  position: relative;
+}
+
+.education-container h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #004aad, #00aaff);
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* Individual Education Card */
+.education-item {
+  background: #f9faff;
+  border-radius: 14px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0, 75, 173, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 75, 173, 0.2);
+}
+
+/* School Name and Degree */
+.education-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003a8c;
+  margin-bottom: 6px;
+}
+
+/* Year and Location */
+.education-meta {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.education-meta span {
+  margin-right: 12px;
+}
+
+/* Description or Details */
+.education-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #444;
+  max-width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .education-container {
+    padding: 30px 20px;
+  }
+
+  .education-header {
+    font-size: 1.3rem;
+  }
+
+  .education-description {
+    max-width: 100%;
+  }
+}
+
+/* Location Section Gradient */
+#location {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+#location h2,
+#location p {
+  color: white;
+}
+
+/* My Works Section Gradient */
+#works {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+}
+
+#works h2,
+#works p {
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .hero-img {
+    max-width: 200px;
+  }
+
+  .typed-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===== Skills Section Container ===== */
+.skills-container {
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #2e2e2e;
+}
+
+/* Section Title */
+.skills-container h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #004aad;
+  letter-spacing: 1.1px;
+  position: relative;
+}
+
+.skills-container h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #004aad, #00aaff);
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* Individual Skill Wrapper */
+.skill {
+  margin-bottom: 28px;
+  transition: background-color 0.3s ease;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.skill:hover {
+  background-color: #f0f8ff;
+}
+
+/* Skill Header with name and percent */
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+/* Skill Bar Background */
+.skill-bar {
+  width: 100%;
+  height: 22px;
+  background-color: #e1e1e1;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill Progress (fill) */
+.skill-progress {
+  height: 100%;
+  width: 0;
+  border-radius: 16px 0 0 16px;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+  animation: fillBar 1.8s forwards ease-in-out;
+}
+
+/* Animation to fill skill bars */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--progress-width);
+  }
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .skills-container {
+    padding: 30px 20px;
+  }
+  .skill-name {
+    font-size: 1rem;
+  }
+  .skill-bar {
+    height: 18px;
+  }
+}
+
+/* Desktop Enhancements */
+@media (min-width: 992px) {
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 80px 0;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+  }
+
+  .hero-img {
+    max-width: 300px;
+  }
+
+  .hero-text {
+    max-width: 600px;
+  }
+
+  #home h1 {
+    font-size: 3rem;
+  }
+
+  #home h3 {
+    font-size: 2rem;
+  }
+
+  .typed-text {
+    font-size: 1.8rem;
+  }
+
+
+  #about .row,
+  #education .row,
+  #works .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #about img,
+  #education img,
+  #works img {
+    max-width: 40%;
+    margin-right: 30px;
+  }
+
+  #about .text,
+  #education .text,
+  #works .text {
+    max-width: 55%;
+  }
+
+  .progress {
+    max-width: 700px;
+    margin: 0 auto 20px;
+  }
+
+  #contact ul {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+/* Login/Signup Section */
+#login-signup {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+#login-signup h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+#login-signup .container {
+  border-radius: 20px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#login-signup .container:hover {
+  transform: scale(1.01);
+}
+
+.form-box {
+  max-width: 100%;
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.button-group .btn {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .form-box {
+    padding: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .button-group .btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
+  footer {
+    padding: 40px 0;
+  }
+}
+
+    
